@@ -3,12 +3,7 @@
     {{ .title }}
   </h1>
 
-  <div hx-target="this" hx-swap="outerHTML">
-    <div>OLD</div>
-    <button hx-get="/swap" class="btn btn-primary">
-    Click To Swap content
-    </button>
-  </div>
+  {{ template "_old.html" }}
 
 </html>
 <script src="/assets/htmx.min.js"></script>
